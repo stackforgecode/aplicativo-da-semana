@@ -1,0 +1,40 @@
+## 📄 Configuração e Execução do Cluster SQL Server
+
+Este documento fornece uma visão geral dos passos envolvidos na configuração e execução de um cluster SQL Server, utilizando emojis e caracteres especiais para uma melhor apresentação.
+
+### ⚙️ Configuração do Cluster
+
+Antes de executar o cluster SQL Server, é necessário configurar um ambiente de cluster adequado. Certifique-se de seguir as diretrizes e as melhores práticas da Microsoft para configurar e preparar os nós do cluster. Isso pode envolver a configuração de nós físicos ou virtuais, além de recursos compartilhados, como discos de cluster e redes.
+
+### 📥 Instalação do SQL Server
+
+Após configurar o ambiente de cluster, siga as etapas abaixo para instalar o SQL Server nos nós do cluster:
+
+1. Faça o download da versão adequada do SQL Server no site oficial da Microsoft.
+2. Execute o instalador do SQL Server em cada nó do cluster.
+3. Durante a instalação, selecione os bancos de dados criados anteriormente para serem usados no cluster.
+
+### 🔧 Configuração das Instâncias do SQL Server
+
+Após a instalação, é necessário configurar as instâncias do SQL Server para usar o cluster. Siga as etapas abaixo:
+
+1. Abra o SQL Server Configuration Manager.
+2. Associe as instâncias do SQL Server aos nós do cluster.
+3. Configure os recursos compartilhados, como endereços IP e discos de cluster, para as instâncias do SQL Server.
+
+### 🌐 Configuração de Alta Disponibilidade dos Bancos de Dados
+
+Para garantir alta disponibilidade dos bancos de dados no cluster, é preciso configurá-los corretamente. Utilize as tecnologias disponíveis no SQL Server, como grupos de disponibilidade, espelhamento de banco de dados, Log Shipping ou AlwaysOn Failover Cluster Instances (FCI). Consulte a documentação oficial do SQL Server para obter mais informações sobre cada tecnologia e suas configurações.
+
+### ✅ Testes e Monitoramento
+
+Após configurar o cluster e os bancos de dados, é essencial realizar testes de failover e recuperação para garantir que o cluster esteja funcionando corretamente. Monitore o cluster e os bancos de dados para garantir a estabilidade e a disponibilidade contínua.
+
+**Nota:** A configuração e execução de um cluster SQL Server são tarefas complexas que requerem conhecimento especializado. É altamente recomendável seguir as diretrizes fornecidas pela Microsoft e consultar a documentação oficial do SQL Server para obter instruções detalhadas e precisas.
+
+📚 Referências adicionais:
+- [Documentação do SQL Server](https://docs.microsoft.com/pt-br/sql/sql-server/)
+- [Microsoft SQL Server](https://www.microsoft.com/pt-br/sql-server/)
+
+🔒 Licença
+Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.
